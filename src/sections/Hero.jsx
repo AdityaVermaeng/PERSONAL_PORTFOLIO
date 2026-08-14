@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 max-w-6xl z-10 relative">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
-          
+
           {/* Left Content */}
           <div className="flex-1 max-w-2xl">
             <motion.div
@@ -76,7 +76,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/resume1.pdf"
                 download
                 className="btn-secondary px-6 py-3 text-sm font-semibold flex items-center gap-2 border-surface-700 hover:border-cyan-500/50"
               >
@@ -126,7 +126,7 @@ const Hero = () => {
                 }}
               />
             </div>
-            
+
             {/* Experience Pill */}
             <div className="absolute -bottom-4 -left-4 glass-card px-4 py-2 flex items-center gap-3 border border-surface-700/60 shadow-xl rounded-2xl">
               <div className="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
