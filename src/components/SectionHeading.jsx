@@ -10,7 +10,7 @@ const SectionHeading = ({ title, subtitle }) => {
       viewport={{ once: true }}
       className="text-center w-full mb-16"
     >
-      <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+      <h2 className="text-3xl md:text-4xl font-display font-bold text-surface-100 mb-4">
         {title}
       </h2>
       
