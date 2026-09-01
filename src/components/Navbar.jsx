@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import portfolioData from '../data/portfolioData'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Download } from 'lucide-react'
+import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -84,6 +85,7 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            <ThemeToggle />
             <a
               href="/resume.pdf"
               download
@@ -94,8 +96,9 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile Menu & Theme Button */}
+          <div className="md:hidden flex items-center gap-3">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
