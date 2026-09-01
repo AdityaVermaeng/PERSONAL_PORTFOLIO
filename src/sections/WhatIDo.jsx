@@ -39,7 +39,7 @@ const WhatIDo = () => {
                 {getIcon(item.icon)}
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-xl font-bold text-surface-100 mb-3 group-hover:text-cyan-400 transition-colors">
                 {item.title}
               </h3>
 
