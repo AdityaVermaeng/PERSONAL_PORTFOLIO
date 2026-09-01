@@ -41,7 +41,7 @@ const Footer = () => {
     <footer className="bg-surface-950 border-t border-surface-800/80 py-10 relative">
       <div className="container-max max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <p className="text-white font-bold text-base">Aditya Verma</p>
+          <p className="text-surface-100 font-bold text-base">Aditya Verma</p>
           <p className="text-surface-400 text-xs font-mono mt-0.5">
             Frontend Developer • React.js • JavaScript
           </p>

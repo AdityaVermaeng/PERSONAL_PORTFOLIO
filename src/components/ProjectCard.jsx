@@ -34,7 +34,7 @@ const ProjectCard = ({ project, index }) => {
           </div>
 
           <div className="z-10">
-            <h3 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+            <h3 className="text-2xl font-bold text-surface-100 group-hover:text-cyan-400 transition-colors">
               {project.title}
             </h3>
           </div>
@@ -125,12 +125,12 @@ const ProjectCard = ({ project, index }) => {
               {/* Modal Header */}
               <div className="flex items-center justify-between border-b border-surface-800 pb-4 mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold text-white">{project.title}</h3>
+                  <h3 className="text-2xl font-bold text-surface-100">{project.title}</h3>
                   <p className="text-cyan-400 text-xs font-mono">{project.subtitle} — Detailed Case Study</p>
                 </div>
                 <button
                   onClick={() => setShowCaseStudy(false)}
-                  className="w-8 h-8 rounded-full bg-surface-800 flex items-center justify-center text-surface-400 hover:text-white hover:bg-surface-700 transition-colors"
+                  className="w-8 h-8 rounded-full bg-surface-800 flex items-center justify-center text-surface-400 hover:text-cyan-400 hover:bg-surface-700 transition-colors"
                 >
                   <X size={18} />
                 </button>
