@@ -52,13 +52,13 @@ const About = () => {
           >
             <div className="space-y-4 text-surface-300 text-base leading-relaxed">
               <p>
-                I am a <strong className="text-white font-semibold">Frontend Developer</strong> who specializes in crafting intuitive, accessible, and responsive user interfaces with <strong className="text-cyan-400 font-semibold">React.js</strong> and modern <strong className="text-cyan-400 font-semibold">JavaScript (ES6+)</strong>.
+                I am a <strong className="text-surface-100 font-semibold">Frontend Developer</strong> who specializes in crafting intuitive, accessible, and responsive user interfaces with <strong className="text-cyan-400 font-semibold">React.js</strong> and modern <strong className="text-cyan-400 font-semibold">JavaScript (ES6+)</strong>.
               </p>
               <p>
-                With hands-on experience as a <strong className="text-white font-semibold">Frontend Developer Intern at CETPA Infotech</strong> and <strong className="text-white font-semibold">UI/UX Developer Trainee with NASSCOM Foundation / Accenture Project</strong>, I translate design prototypes into clean, component-driven web interfaces.
+                With hands-on experience as a <strong className="text-surface-100 font-semibold">Frontend Developer Intern at CETPA Infotech</strong> and <strong className="text-surface-100 font-semibold">UI/UX Developer Trainee with NASSCOM Foundation / Accenture Project</strong>, I translate design prototypes into clean, component-driven web interfaces.
               </p>
               <p>
-                In addition to my frontend expertise, I hold a strong foundation in <strong className="text-white font-semibold">MERN stack development</strong> (Node.js, Express.js, MongoDB), allowing me to seamlessly integrate REST APIs, handle state management, and collaborate efficiently on full-stack web applications.
+                In addition to my frontend expertise, I hold a strong foundation in <strong className="text-surface-100 font-semibold">MERN stack development</strong> (Node.js, Express.js, MongoDB), allowing me to seamlessly integrate REST APIs, handle state management, and collaborate efficiently on full-stack web applications.
               </p>
             </div>
 
@@ -67,25 +67,25 @@ const About = () => {
               <div className="glass-card p-4 border-surface-700/50 hover:border-cyan-500/30 transition-colors">
                 <MapPin className="w-5 h-5 text-cyan-400 mb-2" />
                 <p className="text-[10px] text-surface-400 uppercase tracking-wider">Location</p>
-                <p className="text-xs sm:text-sm text-white font-semibold truncate">New Delhi, IN</p>
+                <p className="text-xs sm:text-sm text-surface-100 font-semibold truncate">New Delhi, IN</p>
               </div>
 
               <div className="glass-card p-4 border-surface-700/50 hover:border-cyan-500/30 transition-colors">
                 <Briefcase className="w-5 h-5 text-cyan-400 mb-2" />
                 <p className="text-[10px] text-surface-400 uppercase tracking-wider">Experience</p>
-                <p className="text-xs sm:text-sm text-white font-semibold truncate">Intern & Trainee</p>
+                <p className="text-xs sm:text-sm text-surface-100 font-semibold truncate">Intern & Trainee</p>
               </div>
 
               <div className="glass-card p-4 border-surface-700/50 hover:border-cyan-500/30 transition-colors">
                 <GraduationCap className="w-5 h-5 text-cyan-400 mb-2" />
                 <p className="text-[10px] text-surface-400 uppercase tracking-wider">Education</p>
-                <p className="text-xs sm:text-sm text-white font-semibold truncate">B.Tech CS (2025)</p>
+                <p className="text-xs sm:text-sm text-surface-100 font-semibold truncate">B.Tech CS (2025)</p>
               </div>
 
               <div className="glass-card p-4 border-surface-700/50 hover:border-cyan-500/30 transition-colors">
                 <Award className="w-5 h-5 text-cyan-400 mb-2" />
                 <p className="text-[10px] text-surface-400 uppercase tracking-wider">Certified</p>
-                <p className="text-xs sm:text-sm text-white font-semibold truncate">Forage SD Sim</p>
+                <p className="text-xs sm:text-sm text-surface-100 font-semibold truncate">Forage SD Sim</p>
               </div>
             </div>
           </motion.div>
