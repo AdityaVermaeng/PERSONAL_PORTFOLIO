@@ -24,7 +24,7 @@ const ExperienceCard = ({ experience, index }) => {
       </div>
 
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-1 gap-2">
-        <h3 className="text-xl font-display font-semibold text-white flex items-center gap-3">
+        <h3 className="text-xl font-display font-semibold text-surface-100 flex items-center gap-3">
           {experience.role}
           {isCurrent && (
             <span className="inline-block bg-cyan-500/10 text-cyan-400 text-xs px-2 py-0.5 rounded-full font-normal tracking-wide">
