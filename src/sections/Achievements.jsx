@@ -35,7 +35,7 @@ const Achievements = () => {
                     </div>
                     <div>
                       <span className="text-xs font-mono text-cyan-400 uppercase tracking-wider">{cert.issuer}</span>
-                      <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                      <h3 className="text-xl font-bold text-surface-100 group-hover:text-cyan-400 transition-colors">
                         {cert.title}
                       </h3>
                     </div>
@@ -86,7 +86,7 @@ const Achievements = () => {
 
         {/* Leadership & Event Coordination Milestone */}
         <div className="max-w-4xl mx-auto">
-          <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-bold text-surface-100 mb-4 flex items-center gap-2">
             <Award className="w-5 h-5 text-cyan-400" />
             <span>Leadership & Technical Events</span>
           </h3>
@@ -102,7 +102,7 @@ const Achievements = () => {
                 className="glass-card p-6 rounded-2xl border border-surface-700/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
               >
                 <div>
-                  <h4 className="text-base font-bold text-white mb-1">{ach.title}</h4>
+                  <h4 className="text-base font-bold text-surface-100 mb-1">{ach.title}</h4>
                   <p className="text-xs font-mono text-cyan-400 mb-2">{ach.organization}</p>
                   <p className="text-surface-300 text-sm leading-relaxed">{ach.description}</p>
                 </div>

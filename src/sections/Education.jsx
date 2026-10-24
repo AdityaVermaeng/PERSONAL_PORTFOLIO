@@ -17,7 +17,7 @@ const Education = () => {
           className="glass-card p-8"
         >
           <GraduationCap className="w-8 h-8 text-cyan-400 mb-4" />
-          <h3 className="text-2xl font-display font-bold text-white mb-2">
+          <h3 className="text-2xl font-display font-bold text-surface-100 mb-2">
             {portfolioData.education.degree}
           </h3>
           <p className="text-cyan-400 font-medium mb-1">

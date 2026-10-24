@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-surface-400 uppercase tracking-wide">Email</p>
-                  <p className="text-white text-sm font-medium group-hover:text-cyan-400 transition-colors">{portfolioData.personal.email}</p>
+                  <p className="text-surface-100 text-sm font-medium group-hover:text-cyan-400 transition-colors">{portfolioData.personal.email}</p>
                 </div>
               </a>
               
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-surface-400 uppercase tracking-wide">Phone</p>
-                  <p className="text-white text-sm font-medium">{portfolioData.personal.phone}</p>
+                  <p className="text-surface-100 text-sm font-medium">{portfolioData.personal.phone}</p>
                 </div>
               </div>
               
@@ -111,7 +111,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-surface-400 uppercase tracking-wide">Location</p>
-                  <p className="text-white text-sm font-medium">{portfolioData.personal.location}</p>
+                  <p className="text-surface-100 text-sm font-medium">{portfolioData.personal.location}</p>
                 </div>
               </div>
               
@@ -121,17 +121,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-surface-400 uppercase tracking-wide">LinkedIn</p>
-                  <p className="text-white text-sm font-medium group-hover:text-cyan-400 transition-colors">Connect on LinkedIn</p>
+                  <p className="text-surface-100 text-sm font-medium group-hover:text-cyan-400 transition-colors">Connect on LinkedIn</p>
                 </div>
               </a>
             </div>
             
             <div className="flex gap-3 mt-8">
-              <a href={portfolioData.personal.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-surface-800 flex items-center justify-center hover:bg-surface-700 transition-colors border border-surface-700/50 hover:border-cyan-500/50">
-                <Github className="w-5 h-5 text-white" />
+              <a href={portfolioData.personal.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-full bg-surface-800 flex items-center justify-center text-surface-300 hover:text-cyan-400 transition-colors border border-surface-700/50 hover:border-cyan-500/50">
+                <Github className="w-5 h-5" />
               </a>
-              <a href={portfolioData.personal.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-surface-800 flex items-center justify-center hover:bg-surface-700 transition-colors border border-surface-700/50 hover:border-cyan-500/50">
-                <Linkedin className="w-5 h-5 text-white" />
+              <a href={portfolioData.personal.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-surface-800 flex items-center justify-center text-surface-300 hover:text-cyan-400 transition-colors border border-surface-700/50 hover:border-cyan-500/50">
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
@@ -153,7 +153,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required 
-                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-white text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
+                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-surface-100 text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
                     placeholder="Your Full Name"
                   />
                 </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required 
-                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-white text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
+                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-surface-100 text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required 
-                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-white text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
+                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-surface-100 text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition"
                     placeholder="Opportunity / Collaboration / General Inquiry"
                   />
                 </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required 
                     rows={4}
-                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-white text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition resize-none"
+                    className="w-full bg-surface-800/80 border border-surface-700/60 rounded-xl px-4 py-3 text-surface-100 text-sm placeholder:text-surface-500 focus:outline-none focus:border-cyan-500/60 focus:ring-1 focus:ring-cyan-500/30 transition resize-none"
                     placeholder="Write your message here..."
                   ></textarea>
                 </div>

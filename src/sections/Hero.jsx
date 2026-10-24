@@ -36,7 +36,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-white tracking-tight mb-4 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-display font-extrabold text-surface-100 tracking-tight mb-4 leading-tight"
             >
               Hi, I'm <span className="gradient-text">Aditya Verma</span>
             </motion.h1>
