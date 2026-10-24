@@ -29,7 +29,7 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-xs sm:text-sm text-cyan-300 mb-6"
             >
               <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span>Available for Frontend Developer Roles</span>
+              <span>Available for Full Stack Developer Roles</span>
             </motion.div>
 
             <motion.h1
@@ -47,7 +47,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-cyan-400 mb-6"
             >
-              Frontend Developer | React.js | JavaScript
+              Full Stack Developer | React.js | JavaScript
             </motion.h2>
 
             <motion.p
