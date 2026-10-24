@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem('theme');
+          if (savedTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
     <title>Aditya Verma — Frontend Developer | React.js | JavaScript</title>
     <meta name="description" content="Aditya Verma — Frontend Developer specializing in React.js, JavaScript (ES6+), and modern web interfaces. View projects, experience, and certifications." />
     <meta name="keywords" content="Aditya Verma, Frontend Developer, React.js, JavaScript, MERN Stack, Web Developer, Portfolio, EstateHub, Eventora" />
