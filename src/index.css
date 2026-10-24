@@ -3,6 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+  :root, html {
+    color-scheme: light;
+    --color-surface-50: 15 23 42;
+    --color-surface-100: 15 23 42;
+    --color-surface-200: 30 41 59;
+    --color-surface-300: 51 65 85;
+    --color-surface-400: 71 85 105;
+    --color-surface-500: 100 116 139;
+    --color-surface-600: 203 213 225;
+    --color-surface-700: 226 232 240;
+    --color-surface-800: 241 245 249;
+    --color-surface-900: 255 255 255;
+    --color-surface-950: 248 250 252;
+  }
+
+  :root.dark, html.dark {
+    color-scheme: dark;
+    --color-surface-50: 248 250 252;
+    --color-surface-100: 241 245 249;
+    --color-surface-200: 226 232 240;
+    --color-surface-300: 203 213 225;
+    --color-surface-400: 148 163 184;
+    --color-surface-500: 100 116 139;
+    --color-surface-600: 71 85 105;
+    --color-surface-700: 51 65 85;
+    --color-surface-800: 30 41 59;
+    --color-surface-900: 15 23 42;
+    --color-surface-950: 8 13 26;
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
@@ -11,6 +41,12 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  /* Smooth cross-fade transition on surface elements during theme switch */
+  body, nav, section, div, main, footer, header, button, input, textarea, h1, h2, h3, h4, p, span, a {
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
   }
 
   ::selection {
@@ -23,16 +59,16 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0f172a;
+    background: rgb(var(--color-surface-950));
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #334155;
+    background: rgb(var(--color-surface-600));
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #475569;
+    background: rgb(var(--color-surface-500));
   }
 }
 
@@ -42,11 +78,11 @@
   }
 
   .glass {
-    @apply bg-surface-900/70 backdrop-blur-xl border border-surface-700/50;
+    @apply bg-surface-900/80 backdrop-blur-xl border border-surface-700/60 shadow-sm transition-all duration-300;
   }
 
   .glass-card {
-    @apply bg-surface-800/50 backdrop-blur-sm border border-surface-700/30 rounded-2xl;
+    @apply bg-surface-800/60 backdrop-blur-sm border border-surface-700/50 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300;
   }
 
   .section-padding {
@@ -62,14 +98,14 @@
       bg-gradient-to-r from-cyan-500 to-blue-600
       hover:from-cyan-400 hover:to-blue-500
       text-white shadow-lg shadow-cyan-500/25
-      transition-all duration-300 hover:shadow-cyan-500/40 hover:-translate-y-0.5;
+      transition-all duration-300 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0;
   }
 
   .btn-secondary {
     @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm
       border border-surface-600 text-surface-300
       hover:border-cyan-500/50 hover:text-cyan-400
-      transition-all duration-300 hover:-translate-y-0.5;
+      transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0;
   }
 }
 
